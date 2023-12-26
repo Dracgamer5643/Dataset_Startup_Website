@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCollector | {% block title %}{% endblock  %}</title>
+    <link rel="stylesheet" href={% static 'css/style.css' %}>
+</head>
+<body>
+    <ul class='nav'>
+        <li class='elements'>Name</li>
+        <a class='anchor' href="/"><li class='elements'>Home</li></a>
+        <a class='anchor' href="/about"><li class='elements'>About</li></a>
+        <div class="dropdown">
+            <a class='anchor' href="/databases"><li class='elements'>Databases</li></a>
+            <div class="dropdown-content">
+            <a href="#">Mostly Liked</a>
+            <a href="#">Names Choice</a>
+            <a href="#">Least</a>
+            </div>
+        </div>
+        <a class='anchor' href="/models"><li class='elements'>Models</li></a>
+        
+        <div class="btn-con">
+            <button id="log-btn" onclick="login()">Login</button>
+            <button id="sig-btn" onclick="signin()">Signup</button>
+        </div>
+        
+    </ul>
+    {% block body %}{% endblock %}
+
+    <div class="login-con">
+        <h3>Login</h3>
+        <div class="input-con">
+        <input onclick="disappear(email)" id="email" type="text" value="Email">
+        <input onclick="disappear(password)" id="password" type="text" value="Password">
+        </div>
+        <button id="log-submit">Login</button>
+        <label class="info">if not having an Account then Signin</label>
+    </div>
+
+    <footer class='foot'>
+        <div class="branding">
+            <label>© Name Programmed</label>
+        </div>
+
+        <div class="social-con">
+            <a class='anchor' href="#"><i class="fi fi-brands-instagram brand"></i></a>
+            <a class='anchor' href="#"><i class="fi fi-brands-google brand"></i></a>
+            <a class='anchor' href="#"><i class="fi fi-brands-twitter brand"></i></a>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="{% static 'javascript/script.js' %}"></script>
+</html>
