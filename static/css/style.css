@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css');
-
+@import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 
 body {
@@ -15,6 +15,8 @@ body {
     padding-bottom: 10px;
     position: sticky;
     top: 1;
+    padding-left: 30px;
+    box-shadow: 10px 2px 2px black;
 }
 
 .anchor {
@@ -63,14 +65,30 @@ body {
 
 .btn-con{
     position: relative;
-    left: 620px;
+    left: 230px;
+    bottom: 7px;
+}
+
+#search{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.sear{
+    cursor: pointer;
+}
+
+.in-con{
+    margin-left: 120px;
 }
 
 #log-btn{
     background-color: cornflowerblue;
     border: 0;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 40px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -79,7 +97,7 @@ body {
     background-color: red;
     border: 0;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 40px;
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -98,15 +116,18 @@ body {
     font-family: sans-serif;
     font-size: 1.1rem;
     margin-left: 50px;
+    margin-top: 10px;
 }
 
 .social-con{
     font-size: 1.4rem;
     position: relative;
-    left: 70%;
+    left: 29%;
+    margin-top: 8px;
 }
 
 .foot{
+    margin-top: 200px;
     color: white;
     display: flex;
     background-color: #333;
@@ -125,7 +146,8 @@ body {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 50px;
-    position: relative;
+    position: absolute;
+    top: 200px;
     left: 35%;
     background-color: #333;
 }
@@ -156,6 +178,7 @@ body {
     background-color: white;
     border: 0px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .info{
@@ -164,3 +187,35 @@ body {
     font-family: sans-serif;
     text-align: center;
 }
+
+.link{
+    color: aqua;
+}
+
+.contact-con h3{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.contact-con{
+    position: relative;
+    left: 180px;
+}
+
+.contact-con input{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+#submit{
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: cornflowerblue;
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+

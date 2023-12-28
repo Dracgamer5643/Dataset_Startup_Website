@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.info-con h1{
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+    font-size: 3.5rem;
+    margin-left: 50px;
+}
+
+.info-con{
+    display: flex;
+}
+
+.person-img{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.para-info{
+    position: absolute;
+    top: 400px;
+    width: 47%;
+    text-align: justify;
+    margin-left: 55px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line-img{
+    position: absolute;
+    left: 1180px;
+    top: 130px;
+    animation: rotateImage 3s linear infinite;
+}
+
+@keyframes rotateImage {
+    0%, 100% {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(30deg);
+    }
+}
+
+@keyframes rotateImage2 {
+    0%, 100% {
+    transform: rotate(0deg);
+    }
+    50% {
+    transform: rotate(-30deg);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+    transform: translateY(0); 
+    }
+    50% {
+    transform: translateY(-20px); 
+    }
+}
+
+
+.graph-img{
+    position: absolute;
+    left: 1150px;
+    top: 250px;
+    animation: bounce 4s linear infinite;
+}
+
+.pie-img{
+    position: absolute;
+    left: 890px;
+    top: 120px;
+    animation: bounce 3s linear infinite;
+}
+
+.line-graph-img{
+    position: absolute;
+    left: 740px;
+    top: 390px;
+    animation: bounce 5s linear infinite;
+}
+
+.nuts-img{
+    position: absolute;
+    left: 1090px;
+    top: 400px;
+    animation: rotateImage2 3s linear infinite;
+}
+
+.main-info-con{
+    margin-top: 50px;
+    padding-bottom: 200px;
+}
+
+.head{
+    width: 35%;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+}
+
+.data-para{
+    width: 30%;
+    text-align: justify;
+    margin-left: 55px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
