@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 
 .info-con h1{
     font-family: 'Roboto', sans-serif;
@@ -96,18 +98,62 @@
 }
 
 .head{
-    width: 35%;
+    width: 80%;
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
     margin-left: 50px;
 }
 
 .data-para{
-    width: 30%;
+    width: 55%;
     text-align: justify;
     margin-left: 55px;
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
 }
 
+.dataset-con{
+    width: 100%;
+}
 
+.pop_datasets_con{
+    width: 70%;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+}
+
+.main-dataset-con{
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.dbs_name{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.card{
+    padding-left: 20px;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+}
+
+.img-con{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.dbs_disc{
+    width: 80%;
+    margin-top: 5px;
+    text-align: justify;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 0.8rem;
+}

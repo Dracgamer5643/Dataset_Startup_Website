@@ -21,25 +21,59 @@
 <p class="para-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla temporibus cum aliquid. Illo nostrum natus rerum dicta. Provident dolor pariatur corporis, sit rerum obcaecati quos, saepe, dignissimos aspernatur dolorem animi?</p>
 </div>
 
+
+<div class="main-dataset-con">
+
 <div class="dataset-con">
     <h1 class="head">Explore Top-Rated Datasets</h1>
     <p class="data-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, odio rerum delectus repellendus vero dicta labore velit suscipit numquam vel?</p>
 </div>
 
 <div class="pop_datasets_con">
+    {% for db in dbs %}
     <div class="card">
-        <h3></h3>
-        <p></p>
+        <div class="img-con">
+            <img src="media/{{db.db_logo}}" alt="Image" width="70%">
+        </div>
+        <div class="dbs-info-con">
+            <h3 class="dbs_name">{{db.db_name}}</h3>
+            <p class="dbs_disc">{{db.db_disc}}</p>
+        </div>
     </div>
-
-    <div class="card">
-        <h3></h3>
-        <p></p>
-    </div>
-
-    <div class="card">
-        <h3></h3>
-        <p></p>
-    </div>
+    {% endfor %}
 </div>
+</div>
+
+<div class="main-dataset-con">
+
+<div class="dataset-con">
+    <h1 class="head">Find Custom-Made Models for your project</h1>
+    <p class="data-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, odio rerum delectus repellendus vero dicta labore velit suscipit numquam vel?</p>
+</div>
+
+<div class="pop_datasets_con">
+    {% for md in mds %}
+    <div class="card">
+        <div class="img-con">
+            {% if md.md_type == 'regression' %}
+            <img src="{% static "images/lines.png" %}" alt="Image" width="70%">
+            
+            {% elif md.md_type == 'clusturing' %}
+            <img src="{% static "images/graph.png" %}" alt="Image" width="70%">
+
+            {% elif md.md_type == 'classification' %}
+            <img src="{% static "images/nuts.png" %}" alt="Image" width="70%">
+            
+            {% endif %}
+        </div>
+        <div class="dbs-info-con">
+            <h3 class="dbs_name">{{md.md_name}}</h3>
+            <p class="dbs_disc">{{md.md_disc}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</div>
+
 {% endblock body %}
