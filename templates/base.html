@@ -10,8 +10,8 @@
 </head>
 <body>
     <ul class='nav'>
-        <li class='elements'>Name</li>
-        <a class='anchor' href="/"><li class='elements'>Home</li></a>
+        <img class="logo-img" src="{% static "images/logo.png" %}" alt="Image" width="3%" height="35px">
+        <a href="/" class="anchor"><li class='Logo-name'>dataAlly</li></a>
         <a class='anchor' href="/about"><li class='elements'>About</li></a>
         <div class="dropdown">
             <a class='anchor' href="/databases"><li class='elements'>Databases</li></a>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <a class='anchor' href="/models"><li class='elements'>Models</li></a>
-        
+        <a class='anchor' href="/models"><li class='elements'>Pools</li></a>
         <div class="in-con">
             <input type="text" onclick="disappear(search)" id="search" value="Search">
             <a><i class="fi fi-rr-search sear"></i></a>
@@ -49,17 +49,13 @@
 
     <footer class='foot'>
         <div class="branding">
-            <label>© Name Programmed</label>
-        </div>
-
-        <div class="contact-con">
-            <h3>Contact Us</h3>
-            <input onclick="disappear(mail)" id="mail" type="text" value="Email">
-            <input onclick="disappear(message)" id="message" type="text" value="Message">
-            <button id="submit">Submit</button>
+            <img src="{% static "images/logo.png" %}" alt="Image" width="30%" height="35px">
+            <label>© dataAlly</label>
         </div>
 
         <div class="social-con">
+            <a href="/about" class="anchor"><li class="elements">About</li></a>
+            <a href="#" class="anchor"><li class="elements">Contact</li></a>
             <a class='anchor' href="#"><i class="fi fi-brands-instagram brand"></i></a>
             <a class='anchor' href="#"><i class="fi fi-brands-google brand"></i></a>
             <a class='anchor' href="#"><i class="fi fi-brands-twitter brand"></i></a>

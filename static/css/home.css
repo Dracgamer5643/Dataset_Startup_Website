@@ -29,12 +29,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.line-img{
-    position: absolute;
-    left: 1180px;
-    top: 130px;
-    animation: rotateImage 3s linear infinite;
-}
 
 @keyframes rotateImage {
     0%, 100% {
@@ -63,34 +57,6 @@
     }
 }
 
-
-.graph-img{
-    position: absolute;
-    left: 1150px;
-    top: 250px;
-    animation: bounce 4s linear infinite;
-}
-
-.pie-img{
-    position: absolute;
-    left: 890px;
-    top: 120px;
-    animation: bounce 3s linear infinite;
-}
-
-.line-graph-img{
-    position: absolute;
-    left: 740px;
-    top: 390px;
-    animation: bounce 5s linear infinite;
-}
-
-.nuts-img{
-    position: absolute;
-    left: 1090px;
-    top: 400px;
-    animation: rotateImage2 3s linear infinite;
-}
 
 .main-info-con{
     margin-top: 50px;
@@ -157,3 +123,4 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 0.8rem;
 }
+
