@@ -21,3 +21,12 @@ class pop_models(models.Model):
 
 def __str__(self):
     return self.md_name
+
+class feedbacks(models.Model):
+    feed_name = models.CharField(max_length=20)
+    feed_message = models.CharField(max_length=100)
+    feed_rating = models.FloatField(null=True, blank=True)
+    feed_logo = models.ImageField(upload_to="images/logos")
+
+def __str__(self):
+    return self.feed_name
