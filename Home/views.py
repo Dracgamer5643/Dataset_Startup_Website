@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from Home.models import pop_datasets, pop_models
+from Home.models import pop_datasets, pop_models, feedbacks
 
 def Home(request):
-    range = 3
+    fds = feedbacks.objects.all()
     dbs = pop_datasets.objects.all()
     mds = pop_models.objects.all()
-    return render(request, 'index.html', {'dbs':dbs, 'range': range, 'mds':mds})
+
+    return render(request, 'index.html', {'fds': fds, 'dbs':dbs, 'mds':mds})
 

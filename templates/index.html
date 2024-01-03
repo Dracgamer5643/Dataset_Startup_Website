@@ -66,7 +66,24 @@
     </div>
     {% endfor %}
 </div>
+</div>
 
+<div class="feedback-con">
+    <h1>What you think About Us ?</h1>
+    <div class="card-con">
+        {% for fd in fds %}
+            {% if fd.feed_rating >= 4.5 %}
+            <div class="feed-card">
+                <img class="feed-img" src="media/{{fd.feed_logo}}" alt="Image">
+                <p class="feed-para">{{fd.feed_message}}</p>
+                <div class="all-con">
+                <h3 class="feed-name">{{fd.feed_name}}</h3>
+                <h3 class="feed-name feed-rat">Rating {{fd.feed_rating}}</h3>
+            </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock body %}
