@@ -3,9 +3,9 @@ from django.http import HttpResponse
 from Home.models import pop_datasets, pop_models, feedbacks
 
 def Home(request):
-    fds = feedbacks.objects.all()
+    main_fds = feedbacks.objects.order_by('-feed_rating')[:3]
     dbs = pop_datasets.objects.all()
     mds = pop_models.objects.all()
 
-    return render(request, 'index.html', {'fds': fds, 'dbs':dbs, 'mds':mds})
+    return render(request, 'index.html', {'main_fds': main_fds, 'dbs':dbs, 'mds':mds})
 
