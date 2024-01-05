@@ -1,6 +1,5 @@
 let loginCon = document.querySelector('.login-con');
 
-
 function login(){
     loginCon.style.display = 'block';
 }
@@ -12,3 +11,4 @@ function disappear(element){
 function signin(){
     alert('Sign-in');
 }
+

@@ -112,8 +112,12 @@
 }
 
 .img-con{
-    margin-top: 20px;
-    width: 50%;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.img-con img{
+    border-radius: 25px;
 }
 
 .dbs_disc{
@@ -122,6 +126,18 @@
     text-align: justify;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 0.8rem;
+}
+
+.dbs-rat{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: gold;
+    background-color: black;
+    width: 40%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
 }
 
 .feedback-con h1{
@@ -177,6 +193,10 @@
 .feed-rat{
     color: gold;
     background-color: black;
-    width: 20%;
-    margin-left: 120px;
+    width: 40%;
+    margin-left: 90px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
 }

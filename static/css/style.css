@@ -136,12 +136,10 @@ body {
 }
 
 .foot{
-    margin-top: 200px;
     border-radius: 20px 20px 0px 0px;
     background-color: #FFF;
     box-shadow: 0px -5px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    padding-top: 15px;
     padding-bottom: 10px;
 }
 

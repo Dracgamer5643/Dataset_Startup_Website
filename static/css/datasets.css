@@ -1,0 +1,122 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
+.left_bar_con{
+    border-right: 1.5px solid black;
+    width: 23%;
+    height: 700px;
+}
+
+.search-con{
+    padding-top: 30px;
+}
+
+.search-con , .keywords-con, .filters-con{
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+.title{
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.sub-title{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.search-con input{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 55px;
+}
+
+.sea{
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    left: -210px;
+    top: 9px;
+    transition: 0.5s ease;
+}
+
+.keywords{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    list-style: none;
+    border-radius: 25px;
+    background: #D9D9D9;
+    padding: 0px 7px;
+    cursor: pointer;
+}
+
+.keywords:hover{
+    background-color: #bfbfbf;
+}
+
+.keywords-con ul{
+    display: flex;
+    width: 195px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 11px 16px;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+#myDropdown{
+    font-size: 1rem;
+    font-family: "Roboto";
+    width: 70px;
+    height: 40px;
+    border: 1px solid var(--Global_Button_BG, #000);
+    border-radius: 25px;
+    padding: 10px 10px;
+}
+
+#myDropdown2{
+    font-size: 1rem;
+    font-family: "Roboto";
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--Global_Button_BG, #000);
+    border-radius: 25px;
+    padding: 10px 10px;
+}
+
+.drops{
+    font-size: 1rem;
+    font-family: "Roboto";
+}
+
+.value-con{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.in{
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.to{
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    color: #616161;
+}

@@ -31,6 +31,7 @@
         <div class="dbs-info-con">
             <h3 class="dbs_name">{{db.db_name}}</h3>
             <p class="dbs_disc">{{db.db_disc}}</p>
+            <p class="dbs-rat">Rating: {{db.db_rating}} ⭐️</p>
         </div>
     </div>
     {% endfor %}
@@ -49,19 +50,21 @@
     <div class="card">
         <div class="img-con">
             {% if md.md_type == 'regression' %}
-            <img src="{% static "images/lines.png" %}" alt="Image" width="70%">
+            <img src="{% static "images/regression.png" %}" alt="Image" width="60%">
             
             {% elif md.md_type == 'clusturing' %}
-            <img src="{% static "images/graph.png" %}" alt="Image" width="70%">
+            <img src="{% static "images/clusturing.png" %}" alt="Image" width="60%">
 
             {% elif md.md_type == 'classification' %}
-            <img src="{% static "images/nuts.png" %}" alt="Image" width="70%">
+            <img src="{% static "images/classification.png" %}" alt="Image" width="60%">
             
             {% endif %}
         </div>
         <div class="dbs-info-con">
             <h3 class="dbs_name">{{md.md_name}}</h3>
             <p class="dbs_disc">{{md.md_disc}}</p>
+            <p class="dbs_name">Type: {{md.md_type}} Model</p>
+            <p class="dbs-rat">Rating: {{md.md_rating}} ⭐️</p>
         </div>
     </div>
     {% endfor %}
@@ -77,7 +80,7 @@
                     <p class="feed-para">{{fd.feed_message}}</p>
                     <div class="all-con">
                         <h3 class="feed-name">{{fd.feed_name}}</h3>
-                        <h3 class="feed-name feed-rat">Rating {{fd.feed_rating}}</h3>
+                        <h3 class="feed-name feed-rat">Rating {{fd.feed_rating}} ⭐️</h3>
                     </div>
                 </div>
         {% endfor %}

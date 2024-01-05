@@ -1,7 +1,78 @@
 {% extends "base.html" %}
-
 {% block title %}Databases{% endblock title %}
 
 {% block body %}
-<h1>Databases Page</h1>
+
+
+<div class="main-all-con">
+
+    <div class="left_bar_con">
+        <div class="search-con">
+            <h2 class="title">Search Datasets</h2>
+            <input id="myInput" type="text" onclick="btn_anime()" value="">
+            <i id="search_btn" class="fi fi-rr-search sea"></i>
+        </div>
+
+        <div class="keywords-con">
+            <h2 class="title">Keywords</h2>
+            <ul>
+                <li class="keywords">Traffic</li>
+                <li class="keywords">Education</li>
+                <li class="keywords">Classification</li>
+                <li class="keywords">Spotify</li>
+                <li class="keywords">Youtube Statistics</li>
+            </ul>
+        </div>
+
+        <div class="filters-con">
+
+            <h2 class="title">Filters ☰</h2>
+
+            <div class="filesize-con">
+                <h3 class="sub-title">File Size</h3>
+
+                <div class="value-con">
+                    <input class="in" type="text">
+                    <h2 class="to">To</h2>
+                    <input class="in" type="text">
+                    <select class="drop" id="myDropdown">
+                        <option class="drops">All</option>
+                        <option class="drops">MB</option>
+                        <option class="drops">GB</option>
+                        <option class="drops">TB</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="price-con">
+                <h3 class="sub-title">Price</h3>
+
+                <div class="value-con">
+                    <input class="in" type="text" value="$">
+                    <h2 class="to">To</h2>
+                    <input class="in" type="text" value="$">
+                    
+                </div>
+            </div>
+
+            <div class="file-type">
+                <h3 class="sub-title">Price</h3>
+
+                <div class="value-con">
+                    <select class="drop" id="myDropdown2">
+                        <option class="drops">All</option>
+                        <option class="drops">MB</option>
+                        <option class="drops">GB</option>
+                        <option class="drops">TB</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_data_con">
+
+    </div>
+</div>
+
+
 {% endblock body %}
