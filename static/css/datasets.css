@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
 
+.main-all-con{
+    display: flex;
+}
+
 .left_bar_con{
     border-right: 1.5px solid black;
     width: 23%;
@@ -120,3 +124,59 @@
     font-size: 0.8rem;
     color: #616161;
 }
+
+.data-card-con{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.data-card{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    background: #D9D9D9;
+    cursor: pointer;
+}
+
+.data-card:hover{
+    box-shadow: 2px 2px 10px gray;
+}
+
+.data-card:hover .database-img{
+    box-shadow: 2px 2px 10px gray;
+}
+
+.data-card h2{
+    margin-left: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.data-card h3{
+    margin-left: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.data-card p{
+    margin-left: 15px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.database-img{
+    width: 250px;
+    height: 122px;
+    flex-shrink: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+

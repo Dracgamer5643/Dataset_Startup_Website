@@ -7,6 +7,7 @@
 <div class="main-all-con">
 
     <div class="left_bar_con">
+
         <div class="search-con">
             <h2 class="title">Search Datasets</h2>
             <input id="myInput" type="text" onclick="btn_anime()" value="">
@@ -25,28 +26,24 @@
         </div>
 
         <div class="filters-con">
-
             <h2 class="title">Filters ☰</h2>
-
             <div class="filesize-con">
                 <h3 class="sub-title">File Size</h3>
-
-                <div class="value-con">
-                    <input class="in" type="text">
-                    <h2 class="to">To</h2>
-                    <input class="in" type="text">
-                    <select class="drop" id="myDropdown">
-                        <option class="drops">All</option>
-                        <option class="drops">MB</option>
-                        <option class="drops">GB</option>
-                        <option class="drops">TB</option>
-                    </select>
-                </div>
+                    <div class="value-con">
+                        <input class="in" type="text">
+                        <h2 class="to">To</h2>
+                        <input class="in" type="text">
+                        <select class="drop" id="myDropdown">
+                            <option class="drops">All</option>
+                            <option class="drops">MB</option>
+                            <option class="drops">GB</option>
+                            <option class="drops">TB</option>
+                        </select>
+                    </div>
             </div>
 
             <div class="price-con">
                 <h3 class="sub-title">Price</h3>
-
                 <div class="value-con">
                     <input class="in" type="text" value="$">
                     <h2 class="to">To</h2>
@@ -57,7 +54,6 @@
 
             <div class="file-type">
                 <h3 class="sub-title">Price</h3>
-
                 <div class="value-con">
                     <select class="drop" id="myDropdown2">
                         <option class="drops">All</option>
@@ -68,11 +64,20 @@
             </div>
         </div>
     </div>
-
-    <div class="right_data_con">
-
-    </div>
 </div>
 
-
+    <div class="right_data_con">
+            <div class="data-card-con">
+                {% for db in dbs %}
+                <div class="data-card">
+                    <h2>{{db.db_name}}</h2>
+                    <h3>{{db.db_price}} $</h3>
+                    <p>{{db.db_disc}}</p>
+                    <img class="database-img" src="/media/{{db.db_logo}}" alt="Image">
+                </div>
+                {% endfor %}
+            </div>
+    </div>
+</div>
+</div>
 {% endblock body %}

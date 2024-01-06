@@ -8,6 +8,7 @@ class pop_datasets(models.Model):
     db_time = models.DateTimeField(auto_now_add=True, editable=False)
     db_logo = models.ImageField(upload_to="images/logos")
     db_rating = models.FloatField(null=True, blank=True)
+    db_price = models.IntegerField(null=True, blank=True)
 
 def __str__(self):
     return self.db.name
