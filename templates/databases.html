@@ -68,16 +68,34 @@
 
     <div class="right_data_con">
             <div class="data-card-con">
-                {% for db in dbs %}
+                {% for db in page_obj %}
                 <div class="data-card">
                     <h2>{{db.db_name}}</h2>
                     <h3>{{db.db_price}} $</h3>
                     <p>{{db.db_disc}}</p>
+                    <p class="rating">Rating {{db.db_rating}}⭐️</p>
                     <img class="database-img" src="/media/{{db.db_logo}}" alt="Image">
                 </div>
                 {% endfor %}
             </div>
     </div>
+</div>
+<div class="pagination">
+    <span class="step-links">
+    {% if page_obj.has_previous %}
+        <a class="anchor page-no" href="?page=1" >&laquo; First</a>
+        <a class="anchor page-no" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+    
+    <span class="current">
+        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+    </span>
+    
+    {% if page_obj.has_next %}
+        <a class="anchor page-no" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="anchor page-no" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+    {% endif %}
+    </span>
 </div>
 </div>
 {% endblock body %}
